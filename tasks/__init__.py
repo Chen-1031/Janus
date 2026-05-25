@@ -1,20 +1,6 @@
 TASK_REGISTRY = {}
 
 try:
-    from tasks.task_aime2024 import AIME2024Task
-
-    TASK_REGISTRY[AIME2024Task.name] = AIME2024Task
-except ImportError:
-    AIME2024Task = None
-
-try:
-    from tasks.task_gsm8k import GSM8KTask
-
-    TASK_REGISTRY[GSM8KTask.name] = GSM8KTask
-except ImportError:
-    GSM8KTask = None
-
-try:
     from tasks.task_math import MATHTask
 
     TASK_REGISTRY[MATHTask.name] = MATHTask
@@ -56,12 +42,6 @@ try:
 except ImportError:
     APIBenchTH = None
 
-try:
-    from tasks.task_omni_math import OmniMATHTask
-
-    TASK_REGISTRY[OmniMATHTask.name] = OmniMATHTask
-except ImportError:
-    OmniMATHTask = None
 
 try:
     from tasks.task_gpqa import GPQATask
@@ -82,11 +62,8 @@ except ImportError:
     MMLUProPhysicsTask = None
 
 __all__ = [
-    "AIME2024Task",
-    "GSM8KTask",
     "MATHTask",
     "MATH500Task",
-    "OmniMATHTask",
     "GPQATask",
     "MMLUProEngineeringTask",
     "MMLUProPhysicsTask",
