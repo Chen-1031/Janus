@@ -189,9 +189,9 @@ where:
 
 | Argument | Meaning |
 |---|---|
-| `--janus-k` | Total support-set size `K`. |
-| `--janus-k-prime` | Coverage-set size `K' = |S_cov|`. |
-| `--janus-l` | Fresh-set size `K_F = |F_t|`. |
+| `--janus-k` | Total support-set size. |
+| `--janus-k-prime` | Coverage-set size. |
+| `--janus-l` | Fresh-set size. |
 | `--janus-beta` | Momentum EMA coefficient for MMT. |
 | `--janus-tau` | MMT threshold. The trigger fires when `cos(z_t, m_{t-1}) < tau`. |
 | `--janus-seed` | Random seed for Janus sampling. |
