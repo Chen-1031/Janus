@@ -474,20 +474,6 @@ python -u main.py \
   --generation-model <ModelName>
 ```
 
----
-
-## Citation
-
-If you find this repository useful, please cite:
-
-```bibtex
-@misc{janus2026,
-  title  = {The Past Is Prologue: A Plug-in Controller for Selective Updates in Sequentially Evolving LLM Memory},
-  author = {Anonymous},
-  year   = {2026},
-  note   = {ACL submission}
-}
-```
 
 ---
 
