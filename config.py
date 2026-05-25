@@ -1,0 +1,17 @@
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+
+PROMPT_FILE = BASE_DIR / "prompts" / "prompt_templates.json"
+
+DEFAULT_METHOD = "ExpRAG"
+DEFAULT_TASKS = ["GSM8K"]
+DEFAULT_UPDATE_MEMORY = True
+DEFAULT_TIMING = False
+DEFAULT_TOP_K = 3
+DEFAULT_EMBEDDING_MODEL = "Qwen/Qwen3-Embedding-0.6B"
+# DEFAULT_GENERATION_MODEL = "Qwen/Qwen3-4B-Instruct-2507"
+DEFAULT_GENERATION_MODEL = "Qwen/Qwen3-8B"
+DEFAULT_TEMPERATURE = 0.7
+DEFAULT_MAX_NEW_TOKENS = 2048
+DEFAULT_OUTPUT_DIR = BASE_DIR / "outputs"

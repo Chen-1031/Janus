@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+.idea/
+model_cache/
+
+# Keep only data folder structure in git
+data/**
+!data/**/
+!data/**/.gitkeep
