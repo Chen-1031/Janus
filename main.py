@@ -34,7 +34,7 @@ def parse_args():
         "--tasks",
         type=str,
         default=",".join(DEFAULT_TASKS),
-        help="Comma-separated task names (GSM8K, AIME2024, MATH, Omni-MATH, GPQA).",
+        help="Comma-separated task names (MATH, GPQA, ...).",
     )
     parser.add_argument("--prompt-file", type=str, default=None)
     parser.add_argument("--top-k", type=int, default=DEFAULT_TOP_K)
