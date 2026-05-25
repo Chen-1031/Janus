@@ -2,7 +2,7 @@
 
 Janus is a plug-in **memory-deployment controller** for sequentially evolving LLM memory systems. In a sequential task stream, a base memory updater proposes a candidate memory after each task. Existing memory methods usually deploy every candidate update directly, but these local updates can make the final memory biased toward recent tasks, noisy rules, or over-specific insights.
 
-Janus addresses this by deciding whether each candidate memory should be accepted or rejected. At step `t`, a base updater proposes a candidate memory $\hat{M} $. Janus either deploys it as the new memory $M_t$, or rolls back to the previous memory $M_{t-1}$. The goal is to maintain a final memory $M_T$ that is useful for future unseen tasks.
+Janus addresses this by deciding whether each candidate memory should be accepted or rejected. At step $t$, a base updater proposes a candidate memory $\hat{M}\_{t} $. Janus either deploys it as the new memory $M_t$, or rolls back to the previous memory $M_{t-1}$. The goal is to maintain a final memory $M_T$ that is useful for future unseen tasks.
 
 Janus has two main components:
 
